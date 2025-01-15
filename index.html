@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohid Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>ROHID</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bi bi-x-lg" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm <span>Rohid</span><br></h1>
+                <p>Web Developer | Back-end Engineer | Cloud Engineer</p>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a recent graduate from Langlangbuana University with a Bachelor's degree in Informatics
+                        Engineering, and
+                        an alumnus of the Bangkit Academy 2023 Batch 1 in the Cloud Computing program. Over the course
+                        of two years (2021-2023), I worked as a Laboratory Assistant at Langlangbuana University, where
+                        I honed both my technical and communication skills.
+                        During my studies, I developed Android applications using Flutter and built RESTful APIs with
+                        Python and Flask. In addition, I possess strong proficiency in various programming languages and
+                        scripting, including PHP, Java, Python, Flutter, JavaScript, HTML, CSS, and SQL.
+                        I am passionate about continuous learning and innovation in the tech field, and eager to
+                        contribute to the development of impactful and efficient IT solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Hard Skills</span><br>CI3, CI4, Flutter, MySQL, PHP, Java, Python, Laravel, Flask,
+                                HTML/CSS, Bootstrap 5, Git, GCP</li>
+                            <li><span>Soft skills</span><br>Team Work, Problem Solving, Communication, Time Management
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2023</span><br>Laboratory Assistant</li>
+                            <li><span>2019</span><br> Internship EDP and IT Support at PT. Arimbi Amartapura </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>Langlangbuana University </li>
+                            <li><span>2023</span><br>Bangkit Academy led by Google, Goto, & Traveloka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/sips.png">
+                    <div class="layer">
+                        <h3>SIPS</h3>
+                        <p>Complaint platformn and guidance at school. Technology used: CI4, Bootstrap 5, Ajax, MySQL.
+                        </p>
+                        <!-- <a href="#"><i class="bi bi-box-arrow-up-right"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/ltrofh.png">
+                    <div class="layer">
+                        <h3>Ltrofh</h3>
+                        <p>UMKM website platform for ordering sports jerseys. Technology used: CI3, MySQL, CSS Bootstrap
+                            5.</p>
+                        <!-- <a href="#"><i class="bi bi-box-arrow-up-right"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/stunt-check.jpg">
+                    <div class="layer">
+                        <h3>Stunt Check</h3>
+                        <p>Mobile-based application to check stunting in toddlers aged 0-59 months. Technology used:
+                            Flutter, Flask, Sklearn, MySQL.</p>
+                        <!-- <a href="#"><i class="bi bi-box-arrow-up-right"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/section-app.jpg">
+                    <div class="layer">
+                        <h3>Section</h3>
+                        <p>Back-end and Cloud Engineer in creating a mobile-based application on a Capstone project for
+                            a recommendation system using TensorFlow. Technology used: CI3, Rest Full APIs, MySQL,
+                            Kotlin, TensorFlow, Flask, GCP.</p>
+                        <a href="https://github.com/vinafy/section-app"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-send"></i> rohidalma@gmail.com</p>
+                    <p><i class="bi bi-telephone-fill"></i> 088219848147</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/rohid.arij/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/rohiddd__/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/rohidadiat"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rohid-adiat-alma-arij-27a92b272/"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <a href="img/cv-rohid.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2025 Rohid</p>
+        </div>
+    </div>
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxvhyGI8cukRrpRj9wcKkwPM0-cCZNQVyFVprri8GRfnDZV_0vrHDo_0T5F1dUiQap/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
